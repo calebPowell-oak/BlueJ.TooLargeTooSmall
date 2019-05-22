@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * Write a description of class Main here.
  *
@@ -8,26 +8,34 @@
 public class Main
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private static Game currentGame;
+    private static int low, high;
+    
+    private static Scanner input;
 
     /**
      * Constructor for objects of class Main
      */
-    public Main()
-    {
-        // initialise instance variables
-        x = 0;
+    public Main(){
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public static void main(String[] args)
     {
-        // put your code here
-        return x + y;
+        input = new Scanner(System.in);
+        
+        System.out.println("Enter the lower bound (inclusive)");
+            low = input.nextInt();
+            input.reset();
+        System.out.println("Enter the upper bound (inclusive)");
+            high = input.nextInt();
+            input.reset();
+            
+        currentGame = new Game(low, high);
+        
+        
+        while(!currentGame.getVictory()){
+            currentGame.check();
+        }
+        
     }
 }

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\n\ Write\ a\ guessing\ game\ which\ prompts\ a\ user\ to\ guess\ a\ mystery\ number\ within\ some\ range.\nAfter\ every\ guess\ the\ program\ should\ display\ some\ variation\ of\ "too\ large",\ "too\ small",\ "correct\ guess",\ respectively.\nUpon\ termination,\ the\ program\ should\ display\ the\ number\ of\ guesses\ before\ successfully\ guessing\ correctly.\nA\ number\ that\ is\ input\ consecutively,\ should\ register\ as\ a\ single\ guess.\n\n\ @author\ Caleb\ Powell\n\ @version\ 5.22.19\n
+comment1.params=
+comment1.target=Game()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Game\n
+comment2.params=lowNum\ highNum
+comment2.target=Game(int,\ int)
+comment3.params=
+comment3.target=void\ check()
+comment4.params=
+comment4.target=boolean\ getVictory()
+comment5.params=win
+comment5.target=void\ showGuesses(boolean)
+numComments=6
