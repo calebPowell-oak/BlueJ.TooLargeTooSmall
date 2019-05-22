@@ -60,7 +60,7 @@ public class Game{
         } else if(currentGuess > mysteryNum){
             if(currentGuess > upperBound){
                 numberOfGuesses--;
-                System.out.printf("Your guess of %d was higher than the uppe bound of %d.\nTry again (no penalty)\n", currentGuess, upperBound);
+                System.out.printf("Your guess of %d was higher than the upper bound of %d.\nTry again (no penalty)\n", currentGuess, upperBound);
                 showGuesses(false);
             } else {
                 System.out.printf("Your guess of %d was too high.\n", currentGuess);
